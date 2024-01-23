@@ -3,4 +3,4 @@
 
 
 
-db.school.findAll();
+db.school.find().forEach(printjson);

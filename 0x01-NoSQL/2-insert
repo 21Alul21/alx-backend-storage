@@ -1,5 +1,4 @@
-// scripts that inserts a document
-// in the collection 'school'
+// insert in school collection
 
 
-db.school.insertOne({name: "Holberton school"});
+db.school.insert({name: "Holberton school"});
