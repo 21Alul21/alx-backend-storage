@@ -1,8 +1,12 @@
-#!/bin/bash
+// Extract the database name from the command line argument
+var dbName = "my_db";
 
-# Extract the database name from the command line argument
-DB_NAME=$1
+// Connect to the MongoDB server
+var db = connect(dbName);
 
-# Execute the MongoDB command to count the documents in the "school" collection
-mongo $DB_NAME --eval 'db.school.countDocuments()'
+// Count the number of documents in the "school" collection
+var count = db.school.countDocuments();
+
+// Display the count
+print(count);
 
