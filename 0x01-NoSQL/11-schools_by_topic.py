@@ -15,6 +15,6 @@ def schools_by_topic(mongo_collection, topic):
       },
     }
     list_of_topics = [
-        topic for topic
-        in mongo_collection.find(filtered_topics)
+        topic for topic in mongo_collection.find(filtered_topics)
     ]
+    return list_of_topics
