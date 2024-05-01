@@ -1,12 +1,4 @@
-// Extract the database name from the command line argument
-var dbName = process.argv[2]
+// script that displays the number of documents in the collection school
 
-// Connect to the MongoDB server
-var db = connect(dbName);
-
-// Count the number of documents in the "school" collection
-var count = db.school.countDocuments();
-
-// Display the count
-print(count);
+db.school.find().count();
 
