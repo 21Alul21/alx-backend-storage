@@ -1,5 +1,5 @@
 // Extract the database name from the command line argument
-var dbName = "my_db";
+var dbName = process.argv[2]
 
 // Connect to the MongoDB server
 var db = connect(dbName);
